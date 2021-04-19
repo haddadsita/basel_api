@@ -1,4 +1,4 @@
-import cors from 'cors';
+// import cors from 'cors';
 
 const app = express()
 const express = require('express')
@@ -11,7 +11,7 @@ const product_router = require('./api/api_products');
 const category_router = require('./api/api_categories');
 
 // Add Access Control Allow Origin headers
-app.use(cors());
+// app.use(cors());
 
 app.use('/api/products/', product_router);
 app.use('/api/categories/', category_router);
